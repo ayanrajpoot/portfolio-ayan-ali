@@ -33,7 +33,7 @@ const carousel = document.getElementById("projectCarousel");
 projects.forEach(project => {
   const card = document.createElement("div");
   card.className = "project-card flex-shrink-0 me-3";
-  card.style.width = "50%";
+  card.style.width = "40%";
   card.setAttribute("data-id", project.id);
 
   card.innerHTML = `
