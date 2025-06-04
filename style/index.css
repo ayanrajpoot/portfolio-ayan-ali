@@ -26,7 +26,7 @@
  opacity: 0.5;  
 }
 .hero-content{
-     position: relative;
+   position: relative;
   z-index: 4;
 }
 
@@ -205,6 +205,8 @@
   opacity: 1;
 }
 
+/* hiding the horizontal scrollbar */
+::-webkit-scrollbar
 #projectCarousel::-webkit-scrollbar {
   display: none;
 }
