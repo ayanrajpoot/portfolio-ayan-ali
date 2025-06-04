@@ -32,3 +32,10 @@ footer .list-inline-item {
 footer .list-inline-item a {
   font-size: 1rem;
 }
+
+@media (max-width: 767px) {
+  footer .container .row{
+   text-align: center;
+  }
+
+}
