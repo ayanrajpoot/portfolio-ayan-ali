@@ -1,0 +1,146 @@
+
+
+/* projects  */
+
+.project-hover-card {
+  height: 300px; 
+  cursor: pointer;
+}
+
+.project-hover-card img {
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.project-hover-card:hover img {
+  transform: scale(1.05);
+}
+
+.project-hover-card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.project-hover-card:hover .overlay {
+  opacity: 1;
+}
+.projects-section {
+  background-color: #1e1e1e;
+}
+
+.project-hover-card .overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.project-hover-card:hover .overlay {
+  opacity: 1;
+}
+
+.arrow svg:hover path {
+  stroke: #ffffff;
+  transition: stroke 0.2s;
+  width: 45px;
+  height: 45px;
+}
+
+
+
+.btn-outline-light {
+  border-radius: 100%;
+}
+
+.project-hover-card .overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.project-hover-card:hover .overlay {
+  opacity: 1;
+}
+
+#projectCarousel::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
+
+/* Add to your projects.css */
+.project-details {
+  margin-top: 2rem;
+  transition: all 0.3s ease;
+}
+
+.project-details-card {
+  background-color: #f8f9fa;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.project-details-card img {
+  width: 100%;
+  max-width: 500px; 
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-details-card h3 {
+  font-size: 1.75rem;
+  color: #222;
+}
+
+.project-details-card p {
+  font-size: 1rem;
+  color: #444;
+}
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Hide arrows on screens smaller than 768px */
+@media (max-width: 767px) {
+  #prevBtn,
+  #nextBtn {
+    display: none !important;
+  }
+
+  .project-hover-card {
+  height: 100px; 
+  cursor: pointer;
+}
+
+}
+

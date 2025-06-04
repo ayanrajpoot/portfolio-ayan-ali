@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Ayan Ali</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style/index.css">
+  <link rel="stylesheet" href="style/navbar.css">
+  <link rel="stylesheet" href="style/footer.css">
+  <link rel="icon" href="./assets/logo.png" type="image/x-icon">
+</head>
+
+
+<body>
+
+  <!-- Navbar -->
+  <div id="navbar"></div>
+
+  <script>
+    fetch("assets/components/navbar.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+      });
+  </script>
+
+
+  <!-- Hero Section -->
+  <section class="hero-section d-flex align-items-center text-white">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <!-- Left Side: Content -->
+        <div class="col-md-6 order-2 order-md-1 text-center text-md-start">
+          <div class="rocket mb-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none"
+              stroke="white" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+              class="icon icon-tabler icon-tabler-rocket">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M4 13a8 8 0 0 1 7 7a6 6 0 0 0 3 -5a9 9 0 0 0 6 -8a3 3 0 0 0 -3 -3a9 9 0 0 0 -8 6a6 6 0 0 0 -5 3" />
+              <path d="M7 14a6 6 0 0 0 -3 6a6 6 0 0 0 6 -3" />
+              <path d="M15 9m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+            </svg>
+          </div>
+          <h1 class="hero-title mb-3">The Developer<span> Who Gets it Done</span></h1>
+          <p class="hero-subtitle mb-4">Bringing your ideas to life with precision and passion.</p>
+          <a href="./contact.html"><button class="btn btn-outline-light rounded-pill px-4 fw-bold">Contact Now</button></a>
+        </div>
+
+        <!-- Right Side: Circular Image -->
+        <div class="col-md-6 order-1 order-md-2 text-center mb-4 mb-md-0 ">
+          <img src="./assets/profile.jpg" alt="Ayan Ali" class="img-fluid rounded-circle hero-image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- project section -->
+  <section id="projects" class="projects-section py-5 bg-dark text-white">
+    <div class="container">
+      <h2 class="text-center mb-5"> MY <span style="color: #ea4242;">Projects</span> </h2>
+
+      <div class="position-relative">
+        <!-- Scrollable Row -->
+        <div id="projectCarousel" class="d-flex overflow-auto flex-nowrap scroll-smooth"
+          style="scroll-behavior: smooth;">
+          <!-- Project Card -->
+          <!-- Add more project cards as needed -->
+        </div>
+
+
+
+        <!-- Arrows -->
+
+        <div class="d-flex justify-content-between align-items-center mt-4">
+          <!-- Left Arrow -->
+          <button id="prevBtn" class="btn bg-transparent border-0 p-0 arrow" style="width: 40px; height: 40px;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" width="40" height="40">
+              <path style="fill:#ffffff"
+                d="M24 12.001H2.914l5.294-5.295-.707-.707L1 12.501l6.5 6.5.707-.707-5.293-5.293H24v-1z" />
+            </svg>
+          </button>
+
+          <!-- View Details -->
+          <a href="./projects.html" class="btn btn-outline-light rounded-pill px-4 fw-bold">View Details</a>
+
+          <!-- Right Arrow  -->
+          <button id="nextBtn" class="btn bg-transparent border-0 p-0 arrow" style="width: 40px; height: 40px;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
+              <path style="fill:#ffffff"
+                d="m17.5 5.999-.707.707 5.293 5.293H1v1h21.086l-5.294 5.295.707.707L24 12.499l-6.5-6.5z"
+                data-name="Right" />
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- education section -->
+
+  <!-- timeline  -->
+
+  <section id="timeline" class="py-5 bg-dark text-white">
+    <div class="container">
+      <h2 class="text-center mb-5"> <span style="color: #ea4242;">My </span>Journey</h2>
+
+      <div class="timeline d-flex justify-content-between flex-wrap position-relative">
+
+        <!-- College -->
+        <div class="timeline-item text-center">
+          <div class="circle mb-2">🎓</div>
+          <h5 class="fw-bold">College</h5>
+          <p class="small">2020 - 2022</p>
+        </div>
+
+        <!-- University -->
+        <div class="timeline-item text-center">
+          <div class="circle mb-2">🏫</div>
+          <h5 class="fw-bold">University</h5>
+          <p class="small">2022 - 2026</p>
+        </div>
+
+        <!-- Marketing Certification -->
+        <div class="timeline-item text-center">
+          <div class="circle mb-2">📈</div>
+          <h5 class="fw-bold">Marketing Cert.</h5>
+          <p class="small">2024</p>
+        </div>
+
+        <!-- Shopify Developer -->
+        <div class="timeline-item text-center">
+          <div class="circle mb-2">🛒</div>
+          <h5 class="fw-bold">Shopify Dev</h5>
+          <p class="small">2024</p>
+        </div>
+
+        <!-- Timeline Line -->
+        <div class="timeline-line"></div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="education" class="education-section py-5">
+    <div class="container">
+      <!-- <h2 class="text-center mb-5">My Education Timeline</h2> -->
+      <div class="education-item">
+        <h3 data-bs-toggle="collapse" href="#education4" role="button" aria-expanded="false" aria-controls="education4">
+          <span class="number">04</span> Worked as Shopify Developer
+        </h3>
+        <div class="collapse" id="education4">
+          <p></p>Worked as a shopify developer with different stores to make coded
+            customization to their themes. <br> You can see some projects on the projects page</p>
+        </div>
+      </div>
+
+
+      <div class="education-item">
+        <h3 data-bs-toggle="collapse" href="#education3" role="button" aria-expanded="false" aria-controls="education3">
+          <span class="number">03</span> Certification in Digital Marketing
+        </h3>
+        <div class="collapse" id="education3">
+          <p><a href="https://www.udemy.com/certificate/UC-8a3cbcfd-4a82-4aa1-a9bc-dd40c6fc5486/">Certification</a> in
+            Digital Marketing
+            using Facebook ads and Instagram
+            ads. <br></p>
+        </div>
+      </div>
+
+      <div class="education-item">
+        <h3 data-bs-toggle="collapse" href="#education2" role="button" aria-expanded="false" aria-controls="education2">
+          <span class="number">02</span> Bachelor's Degree in Computer Science
+        </h3>
+        <div class="collapse" id="education2">
+          <p>Forman Christian College University <br>
+            2022 - 2026, Lahore <br>Bachelors in Computer Science
+
+          </p>
+        </div>
+      </div>
+
+      <div class="education-item">
+        <h3 data-bs-toggle="collapse" href="#education1" role="button" aria-expanded="false" aria-controls="education1">
+          <span class="number">01</span> College / Intermediate
+        </h3>
+        <div class="collapse" id="education1">
+          <p>Forman Christian College <br>
+            2020 - 2022, Lahore <br>
+            Intermediate in ICS </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- contact  -->
+  <section id="hero" class="hero-section contact-section  py-5">
+    <div class="overlay"></div>
+    <div class="container text-center">
+      <p class="hero-subtitle mb-4">Want to work together</p>
+      <h1 class="hero-heading">Let't do it</h1>
+      <div class="hero-btn-container">
+       <a href="./contact.html"><button class="btn btn-primary">Get in touch</button></a> 
+      </div>
+    </div>
+  </section>
+
+  <!-- footer  -->
+
+  <div id="footer"></div>
+
+  <script>
+    fetch("assets/components/footer.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("footer").innerHTML = data;
+      });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+  <!-- <script src="js/index.js"></script> -->
+   <script src="js/projects.js"></script>
+</body>
+
+</html>

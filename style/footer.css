@@ -1,0 +1,34 @@
+ /* footer section */
+footer {
+
+  background-color: #212529; /* Dark background color */
+    background-size: cover;
+}
+
+footer a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #f05d5d; /* Red color on hover */
+}
+
+footer h5 {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+footer p, footer a {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+footer .list-inline-item {
+  margin-right: 15px;
+}
+
+footer .list-inline-item a {
+  font-size: 1rem;
+}

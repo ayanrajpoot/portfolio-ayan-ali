@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Ayan Ali</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style/projects.css">
+  <link rel="stylesheet" href="style/navbar.css">
+  <link rel="stylesheet" href="style/footer.css">
+  <link rel="icon" href="./assets/logo.png" type="image/x-icon">
+
+</head>
+
+
+
+<body>
+
+<div id="navbar"></div>
+
+<script>
+  fetch("assets/components/navbar.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("navbar").innerHTML = data;
+    });
+</script>
+
+
+
+  <section id="projects" class="projects-section py-5 bg-dark text-white">
+    <div class="container">
+      <h2 class="text-center mb-5">Some of my <span style="color: #ea4242;;">Projects</span></h2>
+
+      <div class="position-relative">
+        <!-- Scrollable Row -->
+        <div id="projectCarousel" class="d-flex overflow-auto flex-nowrap scroll-smooth"
+          style="scroll-behavior: smooth;">
+          <!-- Project Card -->
+
+          <!-- Add more project cards as needed -->
+        </div>
+
+
+        <!-- Arrows -->
+
+        <div class="d-flex justify-content-between align-items-center mt-4">
+          <!-- Left Arrow -->
+          <button id="prevBtn" class="btn bg-transparent border-0 p-0 arrow" style="width: 40px; height: 40px;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" width="40" height="40">
+              <path style="fill:#ffffff"
+                d="M24 12.001H2.914l5.294-5.295-.707-.707L1 12.501l6.5 6.5.707-.707-5.293-5.293H24v-1z" />
+            </svg>
+          </button>
+
+          <!-- Right Arrow  -->
+          <button id="nextBtn" class="btn bg-transparent border-0 p-0 arrow" style="width: 40px; height: 40px;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
+              <path style="fill:#ffffff"
+                d="m17.5 5.999-.707.707 5.293 5.293H1v1h21.086l-5.294 5.295.707.707L24 12.499l-6.5-6.5z"
+                data-name="Right" />
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="project-details" class="project-details hidden"></div>
+
+  </section>
+
+
+  <!-- Navbar -->
+<div id="footer"></div>
+
+<script>
+  fetch("assets/components/footer.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("footer").innerHTML = data;
+    });
+</script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+<script src="js/projects.js"></script>
+</body>
+
+</html>
