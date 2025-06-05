@@ -1,7 +1,7 @@
  /* footer section */
 footer {
 
-  background-color: #212529; /* Dark background color */
+  background-color: #212529; 
     background-size: cover;
 }
 
@@ -11,7 +11,7 @@ footer a {
 }
 
 footer a:hover {
-  color: #f05d5d; /* Red color on hover */
+  color: #f05d5d; 
 }
 
 footer h5 {
